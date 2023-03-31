@@ -1,4 +1,4 @@
-package com.example.crudretrofit
+package com.example.crudretrofit.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,13 +7,13 @@ import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.crudretrofit.Adapter.OnItemClicked
 import com.example.crudretrofit.Adapter.UsuarioAdapter
+import com.example.crudretrofit.R
 import com.example.crudretrofit.api.RetrofitCliente
 import com.example.crudretrofit.databinding.ActivityMainBinding
 import com.example.crudretrofit.model.Usuario
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import retrofit2.Retrofit
 
 class MainActivity : AppCompatActivity(), OnItemClicked {
     lateinit var binding: ActivityMainBinding
